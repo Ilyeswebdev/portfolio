@@ -32,9 +32,11 @@ nav,
 }
 
 nav {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    height: 17vh;
+    height: 10vh;
+    background-color: rgb(252, 252, 252);
+    padding: 0 1rem;
 }
 
 .nav-links {
@@ -74,7 +76,9 @@ li>a:hover {
 .hamburger-menu {
     position: relative;
     display: block;
+
 }
+
 
 .hamburger-icon {
     display: flex;
@@ -96,11 +100,14 @@ li>a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
-    width: fit-content;
+    background-color: rgb(248, 248, 248);
+    border-radius: 2rem;
+    width: 90vw;
+    margin-left: 1rem;
     max-height: 0;
     overflow: hidden;
     transition: all 300ms ease-in-out;
+
 }
 
 .menu-links a {
@@ -198,13 +205,18 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    gap: 1rem;
+    margin-bottom: 1rem;
+    gap: 200px;
+
 }
+
+
 
 /* ICONS */
 .icon {
     cursor: pointer;
     height: 2rem;
+    padding: 1rem;
 }
 
 /* BUTTONS */
@@ -305,7 +317,7 @@ section {
 article {
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+
     gap: 0.5rem;
 }
 
@@ -377,10 +389,16 @@ article {
 
 .contact-icon {
     cursor: default;
+    height: 1.5rem;
+    margin-left: 1rem;
 }
 
 /* FOOTER */
 footer {
     height: 26vh;
     margin: 0 1rem;
+}
+
+.footer-nav {
+    background-color: white;
 }

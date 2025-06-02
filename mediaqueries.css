@@ -9,6 +9,10 @@
         flex-wrap: wrap;
     }
 
+    nav {
+        justify-content: space-around;
+    }
+
 
 }
 
@@ -20,6 +24,7 @@
 
     #hamburger-nav {
         display: flex;
+
     }
 
     #experience,
@@ -87,7 +92,7 @@
     }
 
     .contact-info-container {
-        margin: 0;
+        margin: .7rem;
 
     }
 
