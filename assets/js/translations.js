@@ -13,6 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
   // set dropdown
   setLanguage(savedLangval); // apply saved language
+  updateLinkBasedOnLanguage(savedLangval);
 });
 const translations = {
   en: {
@@ -81,25 +82,38 @@ function setLanguage(lang) {
   }
 }
 
+function updateLinkBasedOnLanguage(lang) {
+  const cv = document.getElementById("cv-btn");
+
+  // Example: use different URLs based on language
+  if (lang === "fr") {
+    cv.href = "/assets/files/fr_cv.pdf";
+  } else {
+    cv.href = "/assets/files/en_cv.pdf";
+  }
+}
+
 languageBtn.forEach((el) => {
   el.addEventListener("click", function () {
     if (el.value == "en") {
-      setLanguage("fr");
       el.value = "fr";
       el.innerHTML = "Français";
       el.title = "click here to switch to english";
-      localStorage.setItem("preferredLangval", el.value);
+      localStorage.setItem("preferredLangval", "fr");
       localStorage.setItem("preferredLanginner", el.innerHTML);
       localStorage.setItem("preferredLangtitle", el.title);
+      setLanguage("fr");
+      updateLinkBasedOnLanguage("fr");
     } else {
-      setLanguage("en");
       el.value = "en";
       el.innerHTML = "English";
       el.title = "Appuyez pour passer en français";
 
-      localStorage.setItem("preferredLangval", el.value);
+      localStorage.setItem("preferredLangval", "en");
       localStorage.setItem("preferredLanginner", el.innerHTML);
       localStorage.setItem("preferredLangtitle", el.title);
+      setLanguage("en");
+      updateLinkBasedOnLanguage("en");
     }
   });
 });

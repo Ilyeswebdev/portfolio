@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/mediaqueries.css" />
   </head>
+
   <body>
     <!-- DECKTOP NAV -->
     <nav id="descktop-nav">
@@ -64,8 +65,8 @@
         <h1 class="title">ilyes</h1>
         <p  class="secion__text__p2 job_title">Full Stack Developper</p>
         <div class="btn-container">
-          <button id="cv-btn" class="btn btn-color-2">CV</button>
-
+          <a id="cv-btn" class="btn btn-color-2" target="_blank">CV</a>
+          
           <button id="contact-btn" class="btn btn-color-1">contact</button>
         </div>
         <div id="socials-container">
@@ -181,7 +182,7 @@
           </div>
           <!-- Back end -->
           <div class="details-container">
-            <h2 id="backend" class="experience-sub-title">
+            <h2 id="backend" class="experience-sub-title  backend">
               backend development
             </h2>
             <div class="article-container">
@@ -202,8 +203,8 @@
               <article>
                 <img src="assets/icons/check-circle.svg" alt="" class="icon" />
                 <div>
-                  <h3>Node js</h3>
-                  <p class="basic">Basic</p>
+                  <h3>Laravel</h3>
+                  <p class="intermediate">Intermediate</p>
                 </div>
               </article>
 
@@ -235,60 +236,32 @@
           <!-- card -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="assets/images/project1.jpg" class="project-img" alt="" />
+              <img src="assets/images/captureGarantieSoumission.PNG" class="project-img" alt="" />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title ">Garantie Soumission</h2>
             <div
               class="btn-container"
-              onclick="window.open('https://www.github.com/', '_blank')"
+              onclick="window.open('https://github.com/Ilyeswebdev/garantie-soumission', '_blank')"
             >
-              <button class="btn btn-color-2 project-btn">github</button>
+              <button class="btn btn-color-2 project-btn">Github</button>
             </div>
-            <div
-              class="btn-container"
-              onclick="window.open('https://www.github.com/', '_blank')"
-            >
-              <button class="btn btn-color-2 project-btn">Live demo</button>
-            </div>
+  
           </div>
           <!-- Card -->
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="assets/images/project1.jpg" class="project-img" alt="" />
+              <img src="assets/images/CaptureGestionEmployees.PNG" class="project-img" alt="" />
             </div>
-            <h2 class="experience-sub-title project-title">Project two</h2>
+            <h2 class="experience-sub-title project-title ">gestion employés</h2>
             <div
               class="btn-container"
-              onclick="window.open('https://www.github.com/', '_blank')"
+              onclick="window.open('https://github.com/Ilyeswebdev/gestion-employees', '_blank')"
             >
-              <button class="btn btn-color-2 project-btn">github</button>
+              <button class="btn btn-color-2 project-btn">Github</button>
             </div>
-            <div
-              class="btn-container"
-              onclick="window.open('https://www.github.com/', '_blank')"
-            >
-              <button class="btn btn-color-2 project-btn">Live demo</button>
-            </div>
+  
           </div>
-          <!-- card -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="assets/images/project1.jpg" class="project-img" alt="" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project three</h2>
-            <div
-              class="btn-container"
-              onclick="window.open('https://www.github.com/', '_blank')"
-            >
-              <button class="btn btn-color-2 project-btn">github</button>
-            </div>
-            <div
-              class="btn-container"
-              onclick="window.open('https://www.github.com/', '_blank')"
-            >
-              <button class="btn btn-color-2 project-btn">Live demo</button>
-            </div>
-          </div>
+
         </div>
       </div>
 
@@ -308,9 +281,9 @@
           <p>
             <a
               class="contact-link"
-              href="mailto:ilyesdev@gmail.com"
+              href="mailto:ilyes.webdeveloper@gmail.com"
               target="_blank"
-              >ilyesdev@gamil.com</a
+              >ilyes.webdev@gmail.com</a
             >
           </p>
         </div>
@@ -319,7 +292,7 @@
           <p>
             <a
               class="contact-link"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/ilyes-dev/"
               target="_blank"
               >linkdin profile</a
             >
@@ -346,7 +319,8 @@
         </div>
       </nav>
     </footer>
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/script.js"></script>
+ 
   </body>
 </html>

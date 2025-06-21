@@ -235,6 +235,12 @@ section {
     border-radius: 2rem;
 }
 
+.btn-color-2 {
+    text-decoration: none;
+    color: black;
+    font-size: .90rem;
+}
+
 .btn-color-2,
 .btn-color-1 {
     border: rgb(53, 53, 53) 0.1rem solid;
