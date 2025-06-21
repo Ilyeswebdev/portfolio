@@ -87,9 +87,9 @@ function updateLinkBasedOnLanguage(lang) {
 
   // Example: use different URLs based on language
   if (lang === "fr") {
-    cv.href = "/assets/files/fr_cv.pdf";
+    cv.href = "https://ilyeswebdev.github.io/portfolio/fr_cv.pdf";
   } else {
-    cv.href = "/assets/files/en_cv.pdf";
+    cv.href = "https://ilyeswebdev.github.io/portfolio/en_cv.pdf";
   }
 }
 
